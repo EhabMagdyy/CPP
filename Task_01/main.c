@@ -6,8 +6,8 @@ using namespace GPIO;
 
 int main(){
 
-    _ZN4GPIO9GPIO_InitEv();
-    _ZN4GPIO10GPIO_WriteEv();
+    GPIO_Init();
+    GPIO_Write();
 
     return 0;
 }
