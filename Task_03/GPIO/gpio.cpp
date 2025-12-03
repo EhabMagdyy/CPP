@@ -1,11 +1,11 @@
 #include "gpio.hpp"
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdexcept>
 #include <cstring>
+#include <cstdio>
+#include <cstdlib>
 
-GPIO::GPIO(int gpioNumber, const std::string& direction)
-    : gpio(gpioNumber + 512), fdValue(-1){
+GPIO::GPIO(int gpioNumber, const std::string& direction) : gpio(gpioNumber + 512), fdValue(-1){
     exportGPIO();
     setDirection(direction);
     openValueFD();
@@ -18,46 +18,58 @@ GPIO::~GPIO(){
 }
 
 GPIO& GPIO::operator<<(int value){
-    if(fdValue == -1)
-        throw std::runtime_error("Value file not opened");
+    if (fdValue == -1) {
+        perror("GPIO value file not opened");
+        return *this;
+    }
 
     const char* v = (value == 0 ? "0" : "1");
-    if(write(fdValue, v, 1) < 0)
-        throw std::runtime_error("Failed to write GPIO value");
+    if(write(fdValue, v, 1) < 0) {
+        perror("Failed to write GPIO value");
+    }
 
-    // Reset pointer for sysfs
     lseek(fdValue, 0, SEEK_SET);
-
     return *this;
 }
 
-void GPIO::exportGPIO() {
+void GPIO::exportGPIO(){
     int fd = open("/sys/class/gpio/export", O_WRONLY);
-    if (fd < 0)
-        throw std::runtime_error("Cannot open export");
+    if(fd < 0){
+        perror("Cannot open /sys/class/gpio/export");
+        return;
+    }
 
     std::string num = std::to_string(gpio);
-    write(fd, num.c_str(), num.size());
+    if(write(fd, num.c_str(), num.size()) < 0)
+        perror("Failed to write to /sys/class/gpio/export");
+
     close(fd);
-    usleep(200000);
+    usleep(200000); // allow sysfs to create files
 }
 
-void GPIO::unexportGPIO() {
+void GPIO::unexportGPIO(){
     int fd = open("/sys/class/gpio/unexport", O_WRONLY);
-    if (fd < 0) return;
+    if(fd < 0)
+        return;
 
     std::string num = std::to_string(gpio);
-    write(fd, num.c_str(), num.size());
+    if(write(fd, num.c_str(), num.size()) < 0)
+        perror("Failed to write to /sys/class/gpio/unexport");
+
     close(fd);
 }
 
 void GPIO::setDirection(const std::string& direction) {
     std::string path = "/sys/class/gpio/gpio" + std::to_string(gpio) + "/direction";
     int fd = open(path.c_str(), O_WRONLY);
-    if (fd < 0)
-        throw std::runtime_error("Cannot open direction");
+    if(fd < 0){
+        perror(("Cannot open " + path).c_str());
+        return;
+    }
 
-    write(fd, direction.c_str(), direction.size());
+    if(write(fd, direction.c_str(), direction.size()) < 0)
+        perror(("Failed to set direction " + direction).c_str());
+
     close(fd);
 }
 
@@ -65,5 +77,5 @@ void GPIO::openValueFD() {
     std::string path = "/sys/class/gpio/gpio" + std::to_string(gpio) + "/value";
     fdValue = open(path.c_str(), O_WRONLY);
     if (fdValue < 0)
-        throw std::runtime_error("Cannot open value fd");
+        perror(("Cannot open " + path).c_str());
 }

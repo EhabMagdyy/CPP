@@ -1,4 +1,4 @@
-#pragma once
+#pragma once            // like #ifndef GPIO_GPIO_HPP
 #include <string>
 
 class GPIO {
@@ -6,7 +6,6 @@ public:
     GPIO(int gpioNumber, const std::string& direction);
     ~GPIO();
 
-    // operator<< to write 0 or 1
     GPIO& operator<<(int value);
 
 private:
