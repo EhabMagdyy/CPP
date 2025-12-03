@@ -51,6 +51,15 @@ export LD_LIBRARY_PATH=.
 ##### Run the app (you can give it the gpio you want to toggle "by default <22>")
 
 ```bash
-./app.o 27
+pi@ehabpi:~/Documents/ITI_9Months/CPP/00_GPIO_ControlLED $ ./app.o 27
+GPIO value: 1
+GPIO value: 0
+GPIO value: 1
+GPIO value: 0
+GPIO value: 1
+GPIO value: 0
+GPIO value: 1
+^C
+Ctrl+C pressed. Cleaning up GPIO...
 ```
 

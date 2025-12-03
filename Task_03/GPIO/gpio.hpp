@@ -6,7 +6,8 @@ public:
     GPIO(int gpioNumber, const std::string& direction);
     ~GPIO();
 
-    GPIO& operator<<(int value);
+    GPIO& operator<<(int value);    // Write Val
+    GPIO& operator>>(int &value);   // Read Val
 
 private:
     int gpio;

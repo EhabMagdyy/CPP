@@ -12,23 +12,43 @@ GPIO::GPIO(int gpioNumber, const std::string& direction) : gpio(gpioNumber + 512
 }
 
 GPIO::~GPIO(){
-    if (fdValue != -1)
+    if(fdValue != -1)
         close(fdValue);
     unexportGPIO();
 }
 
 GPIO& GPIO::operator<<(int value){
-    if (fdValue == -1) {
-        perror("GPIO value file not opened");
+    if(fdValue == -1){
+        perror("GPIO value file not opened for writing");
         return *this;
     }
 
-    const char* v = (value == 0 ? "0" : "1");
-    if(write(fdValue, v, 1) < 0) {
+    const char* v =(value == 0 ? "0" : "1");
+    if(write(fdValue, v, 1) < 0)
         perror("Failed to write GPIO value");
-    }
 
     lseek(fdValue, 0, SEEK_SET);
+    return *this;
+}
+
+GPIO& GPIO::operator>>(int &value){
+    // Reopen for reading
+    int fd = open(("/sys/class/gpio/gpio" + std::to_string(gpio) + "/value").c_str(), O_RDONLY);
+    if(fd < 0){
+        perror("Cannot open GPIO value file for reading");
+        value = -1;
+        return *this;
+    }
+
+    char buf;
+    if(read(fd, &buf, 1) < 0){
+        perror("Failed to read GPIO value");
+        value = -1;
+    } else {
+        value =(buf == '0' ? 0 : 1);
+    }
+
+    close(fd);
     return *this;
 }
 
@@ -44,7 +64,7 @@ void GPIO::exportGPIO(){
         perror("Failed to write to /sys/class/gpio/export");
 
     close(fd);
-    usleep(200000); // allow sysfs to create files
+    usleep(200000);
 }
 
 void GPIO::unexportGPIO(){
@@ -59,7 +79,7 @@ void GPIO::unexportGPIO(){
     close(fd);
 }
 
-void GPIO::setDirection(const std::string& direction) {
+void GPIO::setDirection(const std::string& direction){
     std::string path = "/sys/class/gpio/gpio" + std::to_string(gpio) + "/direction";
     int fd = open(path.c_str(), O_WRONLY);
     if(fd < 0){
@@ -73,9 +93,9 @@ void GPIO::setDirection(const std::string& direction) {
     close(fd);
 }
 
-void GPIO::openValueFD() {
+void GPIO::openValueFD(){
     std::string path = "/sys/class/gpio/gpio" + std::to_string(gpio) + "/value";
     fdValue = open(path.c_str(), O_WRONLY);
-    if (fdValue < 0)
+    if(fdValue < 0)
         perror(("Cannot open " + path).c_str());
 }
