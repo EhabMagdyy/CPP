@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src",
+  "command": "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++ -DStreamLib_EXPORTS -I/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc -g -fPIC -o CMakeFiles/StreamLib.dir/IStream.cpp.o -c /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/IStream.cpp",
+  "file": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/IStream.cpp"
+},
+{
+  "directory": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src",
+  "command": "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++ -DStreamLib_EXPORTS -I/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc -g -fPIC -o CMakeFiles/StreamLib.dir/OStream.cpp.o -c /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/OStream.cpp",
+  "file": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/OStream.cpp"
+},
+{
+  "directory": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src",
+  "command": "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++ -DStreamLib_EXPORTS -I/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc -g -fPIC -o CMakeFiles/StreamLib.dir/SevenSegment.cpp.o -c /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/SevenSegment.cpp",
+  "file": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/SevenSegment.cpp"
+},
+{
+  "directory": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src",
+  "command": "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++ -DStreamLib_EXPORTS -I/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc -g -fPIC -o CMakeFiles/StreamLib.dir/Stream.cpp.o -c /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/Stream.cpp",
+  "file": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/Stream.cpp"
+},
+{
+  "directory": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src",
+  "command": "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++ -DStreamLib_EXPORTS -I/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc -g -fPIC -o CMakeFiles/StreamLib.dir/IOStream.cpp.o -c /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/IOStream.cpp",
+  "file": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/IOStream.cpp"
+},
+{
+  "directory": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src",
+  "command": "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++ -DStreamLib_EXPORTS -I/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc -g -fPIC -o CMakeFiles/StreamLib.dir/gpio.cpp.o -c /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/gpio.cpp",
+  "file": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/gpio.cpp"
+},
+{
+  "directory": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/app",
+  "command": "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++  -I/home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc -g -o CMakeFiles/Task05.dir/main.cpp.o -c /home/ehab/Documents/ITI_9Months/CPP/Task_05/app/main.cpp",
+  "file": "/home/ehab/Documents/ITI_9Months/CPP/Task_05/app/main.cpp"
+}
+]

@@ -1,0 +1,8 @@
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/CMakeFiles/edit_cache.dir
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/CMakeFiles/rebuild_cache.dir
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src/CMakeFiles/StreamLib.dir
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src/CMakeFiles/edit_cache.dir
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/src/CMakeFiles/rebuild_cache.dir
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/app/CMakeFiles/Task05.dir
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/app/CMakeFiles/edit_cache.dir
+/home/ehab/Documents/ITI_9Months/CPP/Task_05/build/app/CMakeFiles/rebuild_cache.dir

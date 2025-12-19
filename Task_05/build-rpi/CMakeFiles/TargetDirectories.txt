@@ -1,8 +1,0 @@
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/CMakeFiles/edit_cache.dir
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/CMakeFiles/rebuild_cache.dir
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/src/CMakeFiles/StreamLib.dir
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/src/CMakeFiles/edit_cache.dir
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/src/CMakeFiles/rebuild_cache.dir
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/app/CMakeFiles/Task05.dir
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/app/CMakeFiles/edit_cache.dir
-/home/ehab/Documents/ITI_9Months/CPP/Task_05/build-rpi/app/CMakeFiles/rebuild_cache.dir

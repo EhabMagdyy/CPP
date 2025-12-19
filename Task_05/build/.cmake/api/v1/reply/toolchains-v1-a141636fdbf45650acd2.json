@@ -1,0 +1,69 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/aarch64-rpi3-linux-gnu",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/backward",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/lib/gcc/aarch64-rpi3-linux-gnu/13.2.0/include",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/lib/gcc/aarch64-rpi3-linux-gnu/13.2.0/include-fixed",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/sysroot/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/lib/gcc/aarch64-rpi3-linux-gnu/13.2.0",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/lib64",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/sysroot/lib64",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/sysroot/usr/lib64",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/lib",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/sysroot/lib",
+						"/home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/sysroot/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/home/ehab/x-tools/aarch64-rpi3-linux-gnu/bin/aarch64-rpi3-linux-gnu-g++",
+				"version" : "13.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"m",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
