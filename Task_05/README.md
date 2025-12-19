@@ -3,8 +3,7 @@
 ---
 
 #### Demo
-
-
+> https://github.com/user-attachments/assets/bbc397e6-1bc3-4aeb-b4f6-e772e760b18b
 
 ---
 
@@ -44,6 +43,8 @@ libStreamLib.so   								    100%   76KB   8.4MB/s   00:00
 
 #### On RPi
 
+##### Go to your Files Directory, then:
+
 ```bash
 export LD_LIBRARY_PATH=.
 ```
@@ -51,23 +52,5 @@ export LD_LIBRARY_PATH=.
 ##### Run your Project
 
 ```bash
-pi@ehabpi:~/Documents/ITI_9Months/CPP/02_SevenSegment $ ./Task05 
-Please enter a digit (0-9): 1
-Please enter a digit (0-9): 0
-Please enter a digit (0-9): 6
-Please enter a digit (0-9): 7
-Please enter a digit (0-9): 4
-Please enter a digit (0-9): 1
-Please enter a digit (0-9): 079
-Caught an error: Invalid input. Please enter a single digit between 0 and 9.
-Please enter a digit (0-9): 6
-Please enter a digit (0-9): 8
-Please enter a digit (0-9): fdfg
-Caught an error: Invalid input. Please enter a single digit between 0 and 9.
-Please enter a digit (0-9): 5
-Please enter a digit (0-9): 1
-Please enter a digit (0-9): 0
-Please enter a digit (0-9): 8
-Please enter a digit (0-9): e
-Exiting...
+./Task05 
 ```
