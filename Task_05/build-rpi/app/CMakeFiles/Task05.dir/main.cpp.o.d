@@ -188,6 +188,26 @@ app/CMakeFiles/Task05.dir/main.cpp.o: \
  /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/ostream.tcc \
  /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/istream \
  /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/istream.tcc \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/memory \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/stl_tempbuf.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/stl_uninitialized.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/stl_raw_storage_iter.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/align.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/lib/gcc/aarch64-rpi3-linux-gnu/13.2.0/include/stdint.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/sysroot/usr/include/stdint.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/sysroot/usr/include/bits/stdint-uintn.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/unique_ptr.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/shared_ptr.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/shared_ptr_base.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/allocated_ptr.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/ext/aligned_buffer.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/ext/concurrence.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/shared_ptr_atomic.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/atomic_base.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/bits/atomic_lockfree_defines.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/backward/auto_ptr.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/pstl/glue_memory_defs.h \
+ /home/ehab/x-tools/aarch64-rpi3-linux-gnu/aarch64-rpi3-linux-gnu/include/c++/13.2.0/pstl/execution_defs.h \
  /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc/IOStream.hpp \
  /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc/IStream.hpp \
  /home/ehab/Documents/ITI_9Months/CPP/Task_05/src/../inc/Stream.hpp \
